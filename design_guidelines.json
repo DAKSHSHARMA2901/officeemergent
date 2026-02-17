@@ -1,0 +1,299 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "E1_Dark_Swiss_Ops",
+      "archetype": "The Performance Pro",
+      "core_values": [
+        "Precision",
+        "Clarity",
+        "Hierarchy",
+        "Speed"
+      ],
+      "tone": "Professional, Serious, Efficient, Kinetic"
+    },
+    "theme": {
+      "mode": "dark",
+      "strategy": "class_based",
+      "instructions": "The app is strictly dark mode by default. Light mode is secondary or hidden."
+    },
+    "typography": {
+      "fonts": {
+        "headings": {
+          "family": "Manrope",
+          "weights": [
+            "400",
+            "600",
+            "800"
+          ],
+          "provider": "Google Fonts",
+          "import_url": "https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Public+Sans:wght@300;400;500;600&display=swap",
+          "usage_rules": "Use for all headings h1-h6. Tight tracking (-0.02em) for sizes above 24px."
+        },
+        "body": {
+          "family": "Public Sans",
+          "weights": [
+            "300",
+            "400",
+            "500"
+          ],
+          "provider": "Google Fonts",
+          "usage_rules": "Use for all paragraphs, inputs, and data tables. Excellent legibility for UI."
+        },
+        "mono": {
+          "family": "JetBrains Mono",
+          "usage_rules": "Use for IDs, API keys, status codes, and financial data."
+        }
+      },
+      "scale": {
+        "h1": "text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight",
+        "h2": "text-3xl md:text-4xl font-bold tracking-tight",
+        "h3": "text-2xl font-semibold tracking-normal",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed text-muted-foreground",
+        "caption": "text-sm text-muted-foreground tracking-wide uppercase"
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": {
+          "default": "#09090b",
+          "subtle": "#121214",
+          "overlay": "rgba(9, 9, 11, 0.8)"
+        },
+        "foreground": {
+          "default": "#ffffff",
+          "muted": "#a1a1aa",
+          "disabled": "#52525b"
+        },
+        "primary": {
+          "default": "#6366f1",
+          "hover": "#4f46e5",
+          "foreground": "#ffffff",
+          "description": "Electric Indigo. Use for primary actions and active states."
+        },
+        "secondary": {
+          "default": "#27272a",
+          "hover": "#3f3f46",
+          "foreground": "#ffffff"
+        },
+        "accent": {
+          "default": "#27272a",
+          "foreground": "#ffffff"
+        },
+        "border": {
+          "default": "#27272a",
+          "active": "#3f3f46"
+        },
+        "status": {
+          "success": "#10b981",
+          "warning": "#f59e0b",
+          "error": "#ef4444",
+          "info": "#3b82f6"
+        }
+      },
+      "css_vars_update": {
+        "root": {
+          "--background": "0 0% 100%",
+          "--foreground": "240 10% 3.9%"
+        },
+        "dark": {
+          "--background": "240 10% 3.9%",
+          "--foreground": "0 0% 98%",
+          "--card": "240 10% 5.9%",
+          "--card-foreground": "0 0% 98%",
+          "--popover": "240 10% 3.9%",
+          "--popover-foreground": "0 0% 98%",
+          "--primary": "243 75% 59%",
+          "--primary-foreground": "0 0% 98%",
+          "--secondary": "240 3.7% 15.9%",
+          "--secondary-foreground": "0 0% 98%",
+          "--muted": "240 3.7% 15.9%",
+          "--muted-foreground": "240 5% 64.9%",
+          "--accent": "240 3.7% 15.9%",
+          "--accent-foreground": "0 0% 98%",
+          "--destructive": "0 62.8% 30.6%",
+          "--destructive-foreground": "0 0% 98%",
+          "--border": "240 3.7% 15.9%",
+          "--input": "240 3.7% 15.9%",
+          "--ring": "243 75% 59%"
+        }
+      }
+    },
+    "spacing": {
+      "strategy": "Generous",
+      "container_padding": "p-6 md:p-8 lg:p-12",
+      "section_gap": "gap-8 md:gap-12",
+      "component_gap": "gap-4"
+    },
+    "visual_enhancers": {
+      "radius": "0.5rem",
+      "borders": {
+        "style": "1px solid",
+        "color": "border-white/10",
+        "feature": "Use 'Tracing Beam' effect on active cards."
+      },
+      "shadows": {
+        "card": "0 0 0 1px rgba(255,255,255,0.05), 0 4px 12px rgba(0,0,0,0.5)",
+        "hover": "0 0 0 1px rgba(99,102,241,0.5), 0 8px 24px rgba(0,0,0,0.6)"
+      },
+      "glassmorphism": {
+        "header": "bg-background/80 backdrop-blur-md border-b border-white/5",
+        "card": "bg-card/50 backdrop-blur-sm border border-white/5"
+      },
+      "gradients": {
+        "subtle_mesh": "bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-900/20 via-background to-background"
+      }
+    },
+    "layout_strategies": {
+      "dashboard_grid": {
+        "type": "Bento Grid Mode B",
+        "classes": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6",
+        "rules": [
+          "Every pixel utilized",
+          "Use h-full on children",
+          "Summary cards span 1",
+          "Primary charts span 2 or 3"
+        ]
+      },
+      "marketing_hero": {
+        "type": "Asymmetric",
+        "rules": [
+          "No centering",
+          "Text on left/bottom",
+          "Visual on right/top"
+        ]
+      }
+    },
+    "motion": {
+      "libraries": [
+        "framer-motion"
+      ],
+      "animations": {
+        "hover": "transition-all duration-300 ease-out hover:translate-y-[-2px] hover:shadow-lg",
+        "click": "active:scale-95 duration-100",
+        "page_transition": {
+          "initial": {
+            "opacity": 0,
+            "y": 20
+          },
+          "animate": {
+            "opacity": 1,
+            "y": 0
+          },
+          "exit": {
+            "opacity": 0,
+            "y": -20
+          }
+        },
+        "list_stagger": {
+          "container": {
+            "hidden": {
+              "opacity": 0
+            },
+            "show": {
+              "opacity": 1,
+              "transition": {
+                "staggerChildren": 0.05
+              }
+            }
+          },
+          "item": {
+            "hidden": {
+              "opacity": 0,
+              "x": -20
+            },
+            "show": {
+              "opacity": 1,
+              "x": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "usage_rules": [
+      "Use Shadcn UI for all interactive logic (Forms, Dialogs, Dropdowns)",
+      "Customize Shadcn components to match the 'Dark Swiss' aesthetic (remove default rounded-xl, make borders sharper)",
+      "Use 'sonner' for toasts",
+      "Use 'lucide-react' for icons"
+    ],
+    "custom_components": [
+      {
+        "name": "StatCard",
+        "description": "Minimalist card with label, big number, and trend indicator. Glassmorphic bg.",
+        "path": "src/components/dashboard/StatCard.jsx"
+      },
+      {
+        "name": "TaskCard",
+        "description": "Kanban-style card with priority badge, assignee avatar, and progress bar.",
+        "path": "src/components/tasks/TaskCard.jsx"
+      },
+      {
+        "name": "UserTable",
+        "description": "High-density table for user management with sticky header and row actions.",
+        "path": "src/components/users/UserTable.jsx"
+      }
+    ]
+  },
+  "assets": {
+    "images": {
+      "login_bg": {
+        "url": "https://images.unsplash.com/photo-1760875506684-83ba574f64ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG1vZGVybiUyMGRhcmslMjBvZmZpY2UlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzcxMzI5NDAzfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Dark modern office architecture abstract"
+      },
+      "dashboard_filler": {
+        "url": "https://images.unsplash.com/photo-1762417108293-91614140073a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwZGFyayUyMDNkJTIwYWJzdHJhY3QlMjBzaGFwZXN8ZW58MHx8fHwxNzcxMzI5NDAzfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Dark textured surface"
+      },
+      "avatars": [
+        {
+          "url": "https://images.unsplash.com/photo-1762522926157-bcc04bf0b10a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MTMyOTQwMXww&ixlib=rb-4.1.0&q=85",
+          "alt": "Manager Avatar"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1576558656222-ba66febe3dec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MTMyOTQwMXww&ixlib=rb-4.1.0&q=85",
+          "alt": "Admin Avatar"
+        }
+      ]
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px (Thin/Elegant)",
+      "common": {
+        "dashboard": "LayoutDashboard",
+        "users": "Users",
+        "tasks": "CheckSquare",
+        "settings": "Settings",
+        "logout": "LogOut",
+        "add": "Plus",
+        "edit": "Edit2",
+        "delete": "Trash2",
+        "warning": "AlertTriangle",
+        "search": "Search",
+        "filter": "Filter"
+      }
+    }
+  },
+  "implementation_steps": [
+    "1. Update `index.css` with the provided CSS variables for the 'Dark Swiss' theme.",
+    "2. Install necessary packages: `lucide-react`, `framer-motion`, `sonner`, `clsx`, `tailwind-merge`.",
+    "3. Create the `Layout` component with the Sidebar/Navbar structure.",
+    "4. Implement the Authentication pages (Login/Register) using the `login_bg` image.",
+    "5. Build the Dashboard shell using the 'Bento Grid' layout.",
+    "6. Develop the 'User Management' and 'Task Management' modules using the customized Shadcn components.",
+    "7. Apply `data-testid` to all interactive elements."
+  ],
+  "universal_guidelines": [
+    "You tend to converge toward generic outputs. Avoid this.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts. Use grids.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (e.g., `transition: all`).",
+    "You MUST NOT center align the app container.",
+    "Always use modern button styles (pill-shaped or sharp).",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable."
+  ]
+}
